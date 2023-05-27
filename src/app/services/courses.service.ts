@@ -19,4 +19,15 @@ export class CoursesService {
     return this.http.get<PageResponse<Course>>(environment.backendHost+"/drivingcourses?keyword="+keyword+"&page="+currentPage+"&size="+pageSize);
   }
 
+  deleteCourse(courseId: number) {
+    return this.http.delete(environment.backendHost + "/drivingcourses/" + courseId);
+  }
+
+  public saveCourse(course: Course): Observable<Course> {
+    return this.http.post<Course>(environment.backendHost + "/drivingcourses/", course)
+  }
+
+  public updateCourse(course: Course, courseId: number): Observable<Course> {
+    return this.http.put<Course>(environment.backendHost + "/drivingcourses/" + courseId, course)
+  }
 }
