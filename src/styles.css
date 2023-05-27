@@ -10,7 +10,7 @@
 body {
     font-size: 14px;
     /* background-color: #ECF0F2; */
-    background: linear-gradient(45deg,#F21A2B,#E787F2);
+    background: linear-gradient(45deg, #8ccef3, #5a0ddb);
 }
 
 
@@ -98,7 +98,7 @@ ul {
 
 .aside nav ul li a.active,
 .aside nav ul li a.active:hover{
-    background: linear-gradient(195deg,#ec407a,#d81b60);
+    background: linear-gradient(195deg, #5a0ddb, #8ccef3);
     opacity: 1;
 }
 
