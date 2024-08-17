@@ -29,3 +29,6 @@ export class PreventLoggedInAccessGuard implements CanActivate {
     }));
   }
 }
+
+export class PreventLoggedInAccessGuardService {
+}

@@ -7,10 +7,27 @@
 }
 
 
+/*body {
+  font-size: 14px;
+  background: linear-gradient(45deg, #8ccef3, #5a0ddb);
+
+}*/
+
 body {
-    font-size: 14px;
-    /* background-color: #ECF0F2; */
-    background: linear-gradient(45deg, #8ccef3, #5a0ddb);
+  font-size: 14px;
+  /* background-color: #ECF0F2; */
+  background: linear-gradient(45deg, #8ccef3, #5a0ddb);
+  background-image: url('src/assets/images/supercarss.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.login-form {
+  position: absolute;
+  top: 10%;
+  left: 60%;
+  transform: translate(-50%, -50%);
 }
 
 
@@ -18,6 +35,9 @@ body {
 .header-dark {
     background-color: #42424A;
 }
+
+
+
 
 .header-dark .top-menu ul li a {
     color: #Fff;

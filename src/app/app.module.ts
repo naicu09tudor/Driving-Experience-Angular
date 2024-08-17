@@ -22,7 +22,7 @@ import {PreventLoggedInAccessGuard} from "./services/prevent-logged-in-access.gu
 
 
 const appRoutes: Routes = [
-  { path: '', component: AuthenticationComponent },
+  { path: '', component: AuthenticationComponent, canActivate: [PreventLoggedInAccessGuard] },
   {path: 'courses', component: CoursesComponent, canActivate: [AuthGuardService], data: {role: 'Admin'}},
   {path: 'students', component: StudentsComponent, canActivate: [AuthGuardService], data: {role: 'Admin'}},
   {path: 'teachers', component: TeachersComponent, canActivate: [AuthGuardService], data: {role: 'Admin'}},
